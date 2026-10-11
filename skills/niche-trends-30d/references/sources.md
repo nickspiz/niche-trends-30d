@@ -12,18 +12,28 @@ This skill ships no scrapers and no API keys. It is a method. You supply the acc
 
 If none is available for a network, say so in the report and skip it. Do not invent items, and do not fill the gap with remembered posts.
 
-## Data-access terms by platform
+## What to collect per network
 
-| Platform | Public API | Restrictions | Notes |
+| Network | Look at | Engagement numbers to record | Notes |
 |---|---|---|---|
-| **X (Twitter)** | X API v2 | Academic Research tier requires non-commercial affiliation with academic institution; Commercial/Premium requires paid Developer account; free tier very limited | Post IDs may be shared for peer review of academic research only with X written approval |
-| **Bluesky** | AT Protocol (free) | Rate limits: 5,000 points/hour, 35,000 points/day per account; OAuth recommended | No cost, points-based system, all data is publicly accessible |
-| **Reddit** | Closes March 31, 2027 | Public API ending 2027; requires OAuth 2.0; Data API requires paid agreement for commercial use or ML training | New access stopped Oct 31, 2026; unregistered apps lose access Jan 12, 2027; migration to paid platform required |
-| **Instagram** | Graph API (limited) | Requires App Review; hashtag search restricted to 30/rolling 7 days, last 24 hours only; no arbitrary hashtag or user search | Only for business/creator accounts; Business/Creator Instagram account required tied to approved Meta App |
-| **Hacker News** | Free search API | No authentication required; points and comment counts available | Self-posts and linked articles both count; published research available |
+| X | Search for niche keywords, top or popular, plus a few seed accounts | likes, reposts, replies, quotes, views if shown, follower count | Skip video. Quote posts count as the quoting text. |
+| Bluesky | Keyword search and feeds for the niche | likes, reposts, replies | Smaller numbers than X, so compare only inside Bluesky. |
+| Reddit | Top of the month in niche communities | upvotes, comments, upvote ratio if shown | Text and image posts only. Use for topic and structure, never as a source of facts. |
+| Hacker News | Top and front-page stories from the window, plus "Show HN" | points, comments | Self-posts and linked articles both count. |
+| Instagram | Hashtag and account views for the niche, in your own view | likes, comments, saves if shown | Single images and carousels only, no Reels. Check what Meta's current API allows for hashtag search; if it does not fit your case, use route 3 or 4. |
+
+## Public access, in general terms
+
+This is a pointer, not a summary of the terms. Read the platform's current API terms before collecting, and check what applies to your account and your use.
+
+- **X:** the X API is documented at https://docs.x.com. Access, pricing and the Developer Agreement and Developer Policy are described there.
+- **Bluesky:** the AT Protocol is an open protocol with public documentation at https://docs.bsky.app. Different services have different rate limits, so read the current rate-limit page.
+- **Reddit:** access to Reddit data through the API requires approval under Reddit's Responsible Builder Policy (https://support.reddithelp.com/hc/en-us/articles/42728983564564-Responsible-Builder-Policy); commercial use needs separate written approval. Data API Terms: https://redditinc.com/policies/data-api-terms.
+- **Instagram:** Meta's Instagram API offers hashtag search to apps with the required access and permissions, with query limits. Read https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-hashtag-search.
+- **Hacker News:** public data API at https://github.com/HackerNews/API; a search API is documented at https://hn.algolia.com/api.
 
 ## Window
 
 Last 30 days by default. Use the date of the post, not the date it was last seen. A post that peaked three months ago and was reshared yesterday is not a 30-day winner.
 
-Checked: X API docs (developer.x.com), Bluesky AT Protocol docs, Reddit API announcement (Oct 2026), Instagram Graph API docs, Hacker News API
+Checked 11.10.2026 against: https://docs.x.com/developer-guidelines, https://docs.bsky.app/docs/advanced-guides/rate-limits, https://support.reddithelp.com/hc/en-us/articles/42728983564564-Responsible-Builder-Policy, https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-hashtag-search, https://github.com/HackerNews/API
