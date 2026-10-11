@@ -1,0 +1,16 @@
+{
+  "name": "niche-trends-30d",
+  "version": "0.1.0",
+  "description": "A method for finding what worked in a niche over the last 30 days on X, Bluesky, Reddit, Hacker News and Instagram, scoring it against the niche, and adapting winning structures without inventing facts.",
+  "author": {
+    "name": "Nikita Spitsyn",
+    "email": "hello@nickspiz.com",
+    "url": "https://github.com/nickspiz"
+  },
+  "homepage": "https://github.com/nickspiz/niche-trends-30d",
+  "repository": "https://github.com/nickspiz/niche-trends-30d",
+  "license": "MIT",
+  "keywords": ["trends", "social-media", "research", "content", "skills"],
+  "supportUrl": "https://github.com/nickspiz/niche-trends-30d/issues",
+  "privacyPolicyUrl": "https://github.com/nickspiz/niche-trends-30d#privacy"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "niche-trends-30d",
+  "description": "Niche trends skill for Claude Code",
+  "owner": { "name": "Nikita Spitsyn", "url": "https://github.com/nickspiz" },
+  "plugins": [
+    {
+      "name": "niche-trends-30d",
+      "source": "./",
+      "description": "Finds what worked in a niche in the last 30 days, scores it against the niche, filters noise and rumours, and adapts winning structures using only your own facts."
+    }
+  ]
+}
